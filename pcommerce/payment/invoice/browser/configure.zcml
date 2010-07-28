@@ -1,0 +1,47 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="pcommerce">
+
+  <browser:view
+      for="..interfaces.IInvoicePayment"
+      class=".payment.InvoicePayment"
+      name="payment"
+      permission="pcommerce.CheckOut"
+      provides="pcommerce.core.interfaces.IPaymentView"
+      />
+      
+  <browser:view
+      for="..interfaces.IInvoicePayment"
+      class=".overview.InvoiceOverview"
+      name="overview"
+      permission="pcommerce.CheckOut"
+      provides="pcommerce.core.interfaces.IPaymentView"
+      />
+      
+  <browser:view
+      for="..interfaces.IInvoicePayment"
+      class=".confirmation.InvoiceConfirmation"
+      name="confirmation"
+      permission="pcommerce.CheckOut"
+      provides="pcommerce.core.interfaces.IPaymentView"
+      />
+      
+  <browser:page
+      for="Products.CMFCore.interfaces.ISiteRoot"
+      class=".process.ProcessInvoice"
+      name="processInvoice"
+      permission="pcommerce.ManageOrders"
+      />
+
+  <browser:resource
+      name="pcommerce_payment_invoice_icon.gif"
+      image="icon.gif"
+      />
+
+  <browser:resource
+      name="pcommerce_payment_invoice_logo.gif"
+      image="logo.gif"
+      />
+  
+</configure>

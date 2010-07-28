@@ -1,0 +1,48 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: pcommerce.payment.invoice\n"
+"POT-Creation-Date: 2010-03-11 16:23+0000\n"
+"PO-Revision-Date: 2010-03-11 16:12+0000\n"
+"Last-Translator: Simon Kaeser <skaeser@raptus.com>\n"
+"Language-Team: Deutsch <skaeser@raptus.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-code: de\n"
+"Language-name: Deutsch\n"
+"Preferred-encodings: utf-8 latin1\n"
+"Domain: pcommerce\n"
+"X-is-fallback-for: de-ch de-de de-at de-li de-lu\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: plugin.py:12
+msgid "Invoice"
+msgstr "Rechnung"
+
+#: plugin.py:13
+msgid "Payment on account"
+msgstr "Zahlung auf Rechnung"
+
+#. Default: "equal to customer address"
+#: browser/payment.pt:6
+msgid "equal to customer address"
+msgstr "identisch mit Kundenadresse"
+
+#. Default: "Billing address\n${address}\n\nTo process the invoice payment click the following link\n${link}"
+#: plugin.py:27
+msgid "invoice_mailinfo"
+msgstr ""
+"Rechnungsadresse\n"
+"${address}\n"
+"\n"
+"Um die Zahlung abzuschliessen klicken Sie bitte nachfolgenden Link\n"
+"${link}"
+
+#. Default: "Billing address\n${address}"
+#: plugin.py:24
+msgid "invoice_mailinfo_customer"
+msgstr ""
+"Rechnungsadresse\n"
+"${address}"

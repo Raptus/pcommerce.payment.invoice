@@ -1,0 +1,3 @@
+<tal:def tal:define="address view/address;">
+  <metal:address use-macro="context/@@pcommerce_address/addressInfo" />
+</tal:def>
