@@ -1,12 +1,19 @@
-<input type="hidden" name="invoice_hidden" value="1" />
-<label title="">
-  <input type="checkbox" class="noborder as_customer" value="1" name="invoice_address_as_customer"
-         tal:define="address_as_customer view/address_as_customer"
-         tal:attributes="checked python:address_as_customer and 'checked' or ''" />
-  <span i18n:translate="" i18n:domain="pcommerce">equal to customer address</span>
-</label>
-<tal:def tal:define="tag string:invoice_address;
-                     address view/address;
-                     errors view/errors;">
-<metal:address use-macro="context/@@pcommerce_address/addressForm" />
-</tal:def>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xml:lang="en" lang="en"
+      tal:omit-tag="">
+  <input type="hidden" name="invoice_hidden" value="1" />
+  <label title="">
+    <input type="checkbox" class="noborder as_customer" value="1" name="invoice_address_as_customer"
+           tal:define="address_as_customer view/address_as_customer"
+           tal:attributes="checked python:address_as_customer and 'checked' or ''" />
+    <span i18n:translate="" i18n:domain="pcommerce">equal to customer address</span>
+  </label>
+  <tal:def tal:define="tag string:invoice_address;
+                       address view/address;
+                       errors view/errors;">
+  <metal:address use-macro="context/@@pcommerce_address/addressForm" />
+  </tal:def>
+</html>

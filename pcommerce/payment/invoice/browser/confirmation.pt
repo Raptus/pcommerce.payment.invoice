@@ -1,3 +1,9 @@
-<tal:def tal:define="address view/address;">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xml:lang="en" lang="en"
+      tal:define="address view/address;"
+      tal:omit-tag="">
   <metal:address use-macro="context/@@pcommerce_address/addressInfo" />
-</tal:def>
+</html>
