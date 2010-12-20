@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.0b2 (2010-12-20)
+------------------
+
+* Added possibility for admin to fail a payment
+
 1.0b1 (2010-10-20)
 ------------------
 

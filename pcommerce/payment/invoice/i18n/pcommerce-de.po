@@ -30,7 +30,7 @@ msgstr "Zahlung auf Rechnung"
 msgid "equal to customer address"
 msgstr "identisch mit Kundenadresse"
 
-#. Default: "Billing address\n${address}\n\nTo process the invoice payment click the following link\n${link}"
+#. Default: "Billing address\n${address}\n\nTo process the invoice payment click the following link\n${link}\n\nTo cancel the invoice payment process and fail the order click the following link\n${link_failed}"
 #: plugin.py:27
 msgid "invoice_mailinfo"
 msgstr ""
@@ -38,7 +38,10 @@ msgstr ""
 "${address}\n"
 "\n"
 "Um die Zahlung abzuschliessen klicken Sie bitte nachfolgenden Link\n"
-"${link}"
+"${link}\n"
+"\n"
+"Um die Zahlung abzubrechen und die Bestellung zu stornieren klicken Sie bitte nachfolgenden Link\n"
+"${link_failed}"
 
 #. Default: "Billing address\n${address}"
 #: plugin.py:24

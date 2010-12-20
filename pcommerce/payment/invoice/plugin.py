@@ -5,6 +5,9 @@ from pcommerce.core import PCommerceMessageFactory as _
 from pcommerce.core.interfaces import IPaymentMethod
 from pcommerce.payment.invoice.interfaces import IInvoicePayment
 
+FAILED = 1
+SUCCESS = 2
+
 class InvoicePayment(object):
     implements(IPaymentMethod, IInvoicePayment)
     adapts(Interface)
@@ -18,7 +21,7 @@ class InvoicePayment(object):
         self.context = context
         
     def verifyPayment(self, order):
-        return True
+        return getattr(order.paymentdata, 'state', FAILED) is SUCCESS
     
     def mailInfo(self, order, lang=None, customer=False):
         data = order.paymentdata
@@ -31,5 +34,9 @@ ${address}""", mapping=dict(address=address.mailInfo(self.context.REQUEST, lang,
 ${address}
 
 To process the invoice payment click the following link
-${link}""", mapping=dict(address=address.mailInfo(self.context.REQUEST, lang, customer),
-                         link='%s/processInvoice?orderid=%s' % (self.context.absolute_url(), order.orderid)))
+${link}
+
+To cancel the invoice payment process and fail the order click the following link
+${link_failed}""", mapping=dict(address=address.mailInfo(self.context.REQUEST, lang, customer),
+                                link='%s/processInvoice?orderid=%s' % (self.context.absolute_url(), order.orderid),
+                                link_failed='%s/processInvoice?orderid=%s&failed=1' % (self.context.absolute_url(), order.orderid)))
