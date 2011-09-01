@@ -1,0 +1,48 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: pcommerce.payment.invoice\n"
+"POT-Creation-Date: 2011-08-31 15:40+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: Albert Peschar <albert@lapisit.nl>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: nl\n"
+"Language-Name: Nederlands\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: pcommerce\n"
+
+#: plugin.py:12
+msgid "Invoice"
+msgstr "Rekening"
+
+#: plugin.py:13
+msgid "Payment on account"
+msgstr "Levering op rekening"
+
+#. Default: "equal to customer address"
+#: browser/payment.pt:6
+msgid "equal to customer address"
+msgstr "gelijk aan rekening adres"
+
+#. Default: "Billing address\n${address}\n\nTo process the invoice payment click the following link\n${link}\n\nTo cancel the invoice payment process and fail the order click the following link\n${link_failed}"
+#: plugin.py:27
+msgid "invoice_mailinfo"
+msgstr "Rekening adres"
+"Rekening adres\n"
+"${address}\n"
+"\n"
+"Om de betaling te voltooien klikt u op hier.\n"
+"${link}\n"
+"\n"
+"Om de betaling te annuleren klikt u hier.\n"
+"${link_failed}"
+
+#. Default: "Billing address\n${address}"
+#: plugin.py:24
+msgid "invoice_mailinfo_customer"
+msgstr ""
+"Rekening adres\n"
+"${address}"
