@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-03-11 16:23+0000\n"
+"POT-Creation-Date: 2011-12-13 09:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,26 +17,26 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: pcommerce\n"
 
-#: ./plugin.py:12
+#: ./plugin.py:15
 msgid "Invoice"
 msgstr ""
 
-#: ./plugin.py:13
-msgid "Payment on account"
+#: ./plugin.py:16
+msgid "Payment on invoice"
 msgstr ""
 
 #. Default: "equal to customer address"
-#: ./browser/payment.pt:6
+#: ./browser/payment.pt:12
 msgid "equal to customer address"
 msgstr ""
 
 #. Default: "Billing address\n${address}\n\nTo process the invoice payment click the following link\n${link}\n\nTo cancel the invoice payment process and fail the order click the following link\n${link_failed}"
-#: ./plugin.py:27
+#: ./plugin.py:33
 msgid "invoice_mailinfo"
 msgstr ""
 
 #. Default: "Billing address\n${address}"
-#: ./plugin.py:24
+#: ./plugin.py:30
 msgid "invoice_mailinfo_customer"
 msgstr ""
 

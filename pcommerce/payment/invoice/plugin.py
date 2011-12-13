@@ -13,7 +13,7 @@ class InvoicePayment(object):
     adapts(Interface)
     
     title = _('Invoice')
-    description = _('Payment on account')
+    description = _('Payment on invoice')
     icon = '++resource++pcommerce_payment_invoice_icon.gif'
     logo = '++resource++pcommerce_payment_invoice_logo.gif'
     
