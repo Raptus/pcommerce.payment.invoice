@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.0b5 (2012-04-17)
+------------------
+
+* implemented redirection to order detail after processing / failing an order [simu]
+
 1.0b4 (2011-12-13)
 ------------------
 

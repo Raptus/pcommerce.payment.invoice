@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pcommerce.payment.invoice\n"
-"POT-Creation-Date: 2011-12-13 09:38+0000\n"
+"POT-Creation-Date: 2012-04-16 15:23+0000\n"
 "PO-Revision-Date: 2010-03-11 16:12+0000\n"
 "Last-Translator: Steve Beyeler <sbeyeler@raptus.com>\n"
 "Language-Team: Français <sbeyeler@raptus.com>\n"
@@ -22,9 +22,29 @@ msgstr ""
 msgid "Invoice"
 msgstr "Facture"
 
+#: browser/process.py:33
+msgid "Order not found"
+msgstr ""
+
+#: browser/process.py:28
+msgid "Order successfully canceled"
+msgstr ""
+
+#: browser/process.py:30
+msgid "Order successfully processed"
+msgstr ""
+
+#: browser/process.py:26
+msgid "Order already processed"
+msgstr ""
+
 #: plugin.py:16
 msgid "Payment on invoice"
 msgstr "Paiement par facture"
+
+#: browser/process.py:24
+msgid "Processing the order failed"
+msgstr ""
 
 #. Default: "equal to customer address"
 #: browser/payment.pt:12

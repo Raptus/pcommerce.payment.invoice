@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-12-13 09:38+0000\n"
+"POT-Creation-Date: 2012-04-16 15:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,8 +21,28 @@ msgstr ""
 msgid "Invoice"
 msgstr ""
 
+#: ./browser/process.py:33
+msgid "Order not found"
+msgstr ""
+
+#: ./browser/process.py:28
+msgid "Order successfully canceled"
+msgstr ""
+
+#: ./browser/process.py:30
+msgid "Order successfully processed"
+msgstr ""
+
+#: ./browser/process.py:26
+msgid "Order was already processed"
+msgstr ""
+
 #: ./plugin.py:16
 msgid "Payment on invoice"
+msgstr ""
+
+#: ./browser/process.py:24
+msgid "Processing the order failed"
 msgstr ""
 
 #. Default: "equal to customer address"
